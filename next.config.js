@@ -5,8 +5,6 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  assetPrefix: '/wefe-trail-dashboard/',
-  basePath: '/wefe-trail-dashboard',
   distDir: 'out',
 }
 

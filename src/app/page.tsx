@@ -65,7 +65,6 @@ interface Mentor {
   avatar: string
   bio: string
   availability: string[]
-  rating: number
 }
 
 interface Resource {
@@ -109,7 +108,7 @@ const sessions: Session[] = [
       'Team Collaboration Tools Setup'
     ],
     attendance: 100,
-    rating: 4.8
+    
   },
   { 
     id: '1.2', 
@@ -139,7 +138,7 @@ const sessions: Session[] = [
       'Community Engagement Best Practices'
     ],
     attendance: 95,
-    rating: 4.9
+  
   },
   { 
     id: '1.3', 
@@ -204,7 +203,7 @@ const sessions: Session[] = [
       'Water Balance Modeling Tools'
     ],
     attendance: 92,
-    rating: 4.8
+    
   },
   { 
     id: '2.2', 
@@ -267,7 +266,7 @@ const sessions: Session[] = [
       'Valorization Technology Catalog'
     ],
     attendance: 100,
-    rating: 4.9
+  
   },
   { 
     id: '2.4', 
@@ -331,7 +330,7 @@ const sessions: Session[] = [
       'SDG Mapping Framework'
     ],
     attendance: 90,
-    rating: 4.8
+    
   },
   { 
     id: '3.2', 
@@ -394,7 +393,7 @@ const sessions: Session[] = [
       'Testing Protocol Standards'
     ],
     attendance: 100,
-    rating: 4.9
+  
   },
   
   // Week 4
@@ -427,7 +426,7 @@ const sessions: Session[] = [
       'Business Model Validation Framework'
     ],
     attendance: 94,
-    rating: 4.8
+    
   },
   { 
     id: '4.2', 
@@ -490,7 +489,7 @@ const sessions: Session[] = [
       'Scenario Analysis Tools'
     ],
     attendance: 100,
-    rating: 4.8
+    
   },
   
   // Week 5
@@ -585,7 +584,7 @@ const sessions: Session[] = [
       'Synergy Planning Templates'
     ],
     attendance: 96,
-    rating: 4.9
+  
   },
   
   // Week 6
@@ -618,7 +617,7 @@ const sessions: Session[] = [
       'SDG Language Reference'
     ],
     attendance: 98,
-    rating: 4.9
+  
   },
   { 
     id: '6.2', 
@@ -719,36 +718,36 @@ const projects: Project[] = [
     sdgs: [2, 9, 11, 12, 13]
   },
   {
-    id: 'salt',
-    name: 'SALT (Sustainable Alternative Living Technologies)',
-    description: 'Bio-energy and storage system converting organic waste streams into renewable energy and value-added products for desert communities.',
-    focus: 'Bio-Energy & Storage',
-    progress: 10,
+    id: 'rebite-ai',
+    name: 'ReBite AI - AI Valorization of Poultry Waste',
+    description: 'Transforms poultry waste into high-protein aquaculture feed using an AI-driven process to optimize bioconversion. The system is integrated with modular wetlands for water treatment and is solar-powered, creating a circular bioeconomy for Lake Qarun.',
+    focus: 'AI-Driven Bioconversion & Circular Economy',
+    progress: 12,
     milestones: [
-      { title: 'Concept Definition', description: 'Finalize waste stream selection and technology pathway', completed: true, dueDate: 'Week 1' },
-      { title: 'Lab Validation', description: 'Complete lab-scale experiment and data collection', completed: false, dueDate: 'Week 3' },
-      { title: 'Prototype Design', description: 'Design pilot-scale bio-energy system', completed: false, dueDate: 'Week 4' },
-      { title: 'Impact Assessment', description: 'Complete environmental and social impact analysis', completed: false, dueDate: 'Week 5' }
+      { title: 'AI Model Development', description: 'Complete AI optimization algorithm for waste conversion', completed: true, dueDate: 'Week 1' },
+      { title: 'Pilot System Testing', description: 'Install and test pilot bioconversion system', completed: false, dueDate: 'Week 3' },
+      { title: 'Modular Wetlands Integration', description: 'Construct water treatment wetlands system', completed: false, dueDate: 'Week 4' },
+      { title: 'Economic Model Validation', description: 'Complete full value chain financial analysis', completed: false, dueDate: 'Week 5' }
     ],
     team: [
-      { name: 'Dr. Mahmoud Reda', role: 'Lead Researcher', avatar: '👨‍🔬' },
-      { name: 'Sara Gamil', role: 'Energy Engineer', avatar: '👩‍🔧' },
-      { name: 'Hassan Ali', role: 'Waste Management Expert', avatar: '👨‍💼' },
-      { name: 'Amina Said', role: 'Environmental Specialist', avatar: '👩‍🌍' }
+      { name: 'Dr. Karim Hassan', role: 'AI Systems Lead', avatar: '🤖' },
+      { name: 'Fatma Mahmoud', role: 'Bioconversion Engineer', avatar: '👩‍🔬' },
+      { name: 'Omar Khalil', role: 'Circular Economy Expert', avatar: '♻️' },
+      { name: 'Amina Reda', role: 'Environmental Impact Specialist', avatar: '🦆' }
     ],
     technical: [
-      { category: 'Bio-Energy', specs: ['Biogas Production: 100 m³/day', 'Power Generation: 50 kW', 'Digestate: 2 tons/day'] },
-      { category: 'Waste Processing', specs: ['Input Capacity: 5 tons/day', 'Processing Time: 30 days', 'Efficiency: 85%'] },
-      { category: 'Storage', specs: ['Biogas Storage: 500 m³', 'Thermal Storage: 100 kWh', 'Battery Backup: 20 kWh'] }
+      { category: 'AI Bioconversion', specs: ['AI Process Optimization: Real-time', 'Protein Enhancement: 35% increase', 'Conversion Efficiency: 92%'] },
+      { category: 'Waste Processing', specs: ['Poultry Waste Input: 10 tons/day', 'Processing Time: 21 days', 'Pathogen Reduction: 99.9%'] },
+      { category: 'Aquaculture Integration', specs: ['Feed Production: 3.5 tons/day', 'Protein Content: 45%', 'Quality Grade: Premium'] }
     ],
     kpis: [
-      { metric: 'Waste Processed', target: '1,825 tons/year', current: '0 tons/year' },
-      { metric: 'Energy Generated', target: '438,000 kWh/year', current: '0 kWh/year' },
-      { metric: 'CO2 Offset', target: '300 tons/year', current: '0 tons/year' },
-      { metric: 'Revenue from Byproducts', target: '$50,000/year', current: '$0/year' }
+      { metric: 'Waste Processed', target: '3,650 tons/year', current: '0 tons/year' },
+      { metric: 'Protein Feed Produced', target: '1,277 tons/year', current: '0 tons/year' },
+      { metric: 'Lake Pollution Reduced', target: '85%', current: '0%' },
+      { metric: 'Carbon Sequestration', target: '2,500 tons CO2e/year', current: '0 tons/year' }
     ],
-    color: 'bg-purple-500',
-    sdgs: [7, 9, 11, 12, 13]
+    color: 'bg-orange-500',
+    sdgs: [2, 6, 7, 9, 11, 12, 13, 14, 15]
   }
 ]
 
@@ -762,7 +761,7 @@ const mentors: Mentor[] = [
     avatar: '👨‍🏫',
     bio: '15+ years experience in sustainable development projects across North Africa. Specializes in bridging traditional knowledge with modern business practices.',
     availability: ['Mon/Wed/Fri 2-5 PM', 'Flexible for urgent consultations'],
-    rating: 4.9
+  
   },
   { 
     id: 'peter', 
@@ -772,8 +771,7 @@ const mentors: Mentor[] = [
     sessions: 2, 
     avatar: '👨‍🔬',
     bio: 'PhD in Environmental Engineering with 20 years of experience in water treatment systems for arid regions. Published author on sustainable desalination.',
-    availability: ['Tue/Thu 3-6 PM', 'Weekend consultations available'],
-    rating: 4.8
+    availability: ['Tue/Thu 3-6 PM', 'Weekend consultations available']
   },
   { 
     id: 'alaa', 
@@ -783,8 +781,7 @@ const mentors: Mentor[] = [
     sessions: 1, 
     avatar: '👩‍🌾',
     bio: 'Agricultural scientist specializing in desert farming techniques. Expert in hydroponic systems and salt-tolerant crop development.',
-    availability: ['Mon/Wed 10 AM-2 PM', 'Field visits possible'],
-    rating: 4.7
+    availability: ['Mon/Wed 10 AM-2 PM', 'Field visits possible']
   },
   { 
     id: 'dina', 
@@ -795,7 +792,7 @@ const mentors: Mentor[] = [
     avatar: '👩‍🔬',
     bio: 'Environmental engineer with expertise in renewable energy integration and comprehensive impact assessment for sustainable projects.',
     availability: ['Thu/Fri 1-4 PM', 'Evening sessions by appointment'],
-    rating: 4.8
+    
   },
   { 
     id: 'yasmine', 
@@ -806,7 +803,7 @@ const mentors: Mentor[] = [
     avatar: '👩‍💼',
     bio: 'International development consultant with extensive experience in SDG project design and comprehensive risk management frameworks.',
     availability: ['Tue/Thu 9 AM-12 PM', 'Virtual sessions preferred'],
-    rating: 4.9
+  
   }
 ]
 
@@ -816,45 +813,64 @@ const resources: Resource[] = [
     title: 'UNESCO ProDoc Template 2024',
     type: 'document',
     category: 'Templates',
-    description: 'Official UNESCO Project Document template with section-by-section guidelines',
-    url: '/templates/unesco-prodoc-2024.docx',
+    description: 'Official UNESCO Project Document template for the WEFE Trail mentorship program with all required sections and annexes.',
+    url: '/attachments/documents/UNESCO_ProDoc_Template_2024.docx',
     size: '2.5 MB'
   },
   {
     id: '2',
-    title: 'Stakeholder Analysis Toolkit',
-    type: 'tool',
+    title: 'Stakeholder Analysis Template',
+    type: 'template',
     category: 'Assessment Tools',
-    description: 'Interactive toolkit for mapping and analyzing project stakeholders',
-    url: '/tools/stakeholder-analysis.xlsx',
+    description: 'Interactive Excel template for comprehensive stakeholder mapping and analysis with 5 worksheets.',
+    url: '/attachments/templates/Stakeholder_Analysis_Template.xlsx',
     size: '1.2 MB'
   },
   {
     id: '3',
-    title: 'Desalination Technology Masterclass',
-    type: 'video',
-    category: 'Technical Training',
-    description: 'Comprehensive video series on modern desalination technologies',
-    url: '/videos/desalination-masterclass',
-    duration: '3.5 hours'
+    title: 'Business Model Canvas Template',
+    type: 'template',
+    category: 'Business Development',
+    description: 'Strategic planning template with 12 slides covering all 9 building blocks of the BMC.',
+    url: '/attachments/templates/Business_Model_Canvas.pptx',
+    size: '3.8 MB'
   },
   {
     id: '4',
-    title: 'Business Model Canvas Guide',
-    type: 'document',
-    category: 'Business Development',
-    description: 'Step-by-step guide to developing your business model canvas',
-    url: '/guides/bmc-guide.pdf',
-    size: '5.8 MB'
+    title: 'Session 1.1: Kick-off & ProDoc Deconstruction',
+    type: 'video',
+    category: 'Session Recordings',
+    description: 'Complete recording of the initial kick-off session (2 hours 15 minutes, HD 1080p).',
+    url: '/attachments/videos/Session_1_1_Kickoff_Recording.mp4',
+    duration: '2h 15m',
+    size: '850 MB'
   },
   {
     id: '5',
-    title: 'Risk Assessment Framework',
-    type: 'template',
-    category: 'Risk Management',
-    description: 'Comprehensive template for project risk assessment and mitigation',
-    url: '/templates/risk-assessment.xlsx',
-    size: '3.1 MB'
+    title: 'Water System Calculator',
+    type: 'tool',
+    category: 'Technical Tools',
+    description: 'Excel-based tool for sizing and designing water systems for arid regions with 6 calculation modules.',
+    url: '/attachments/tools/Water_Calculator_Excel.xlsx',
+    size: '2.1 MB'
+  },
+  {
+    id: '6',
+    title: 'WEFE Program Timeline 2024',
+    type: 'document',
+    category: 'Visual Resources',
+    description: 'High-resolution infographic showing the complete 6-week program structure and timeline.',
+    url: '/attachments/images/WEFE_Program_Timeline_2024.png',
+    size: '850 KB'
+  },
+  {
+    id: '7',
+    title: 'Attachments Directory',
+    type: 'document',
+    category: 'Resource Library',
+    description: 'Complete directory of all downloadable program materials organized by category.',
+    url: '/attachments/README.md',
+    size: '5 KB'
   }
 ]
 
@@ -1682,7 +1698,6 @@ export default function WEFEDashboard() {
                     <CardDescription>{mentor.title}</CardDescription>
                     <div className="flex items-center justify-center gap-1 mt-2">
                       <Star className="w-4 h-4 text-yellow-500 fill-current" />
-                      <span className="text-sm font-medium">{mentor.rating}</span>
                       <span className="text-sm text-slate-600">({mentor.sessions} sessions)</span>
                     </div>
                   </CardHeader>
@@ -1743,7 +1758,7 @@ export default function WEFEDashboard() {
                       {resource.size && <span>Size: {resource.size}</span>}
                       {resource.duration && <span>Duration: {resource.duration}</span>}
                     </div>
-                    <Button className="w-full" variant="outline">
+                    <Button className="w-full" variant="outline" onClick={() => window.open(`https://github.com/sadow999/wefe-trail-dashboard/raw/main${resource.url}`, '_blank')}>
                       <Download className="w-4 h-4 mr-2" />
                       Download Resource
                     </Button>
